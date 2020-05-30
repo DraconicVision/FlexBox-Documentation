@@ -1,0 +1,100 @@
+/* Source: https://flexboxfroggy.com/ */
+/* IMPORTANT */
+/* All FlexBox properties will not work unless display: flex; is set to the parent element. */
+*{
+    display: flex;
+}
+
+/* justify-content aligns items on a horizontal axis, your x axis. */
+/* justify-content should be applied to the parent element of the desired items.*/
+* {
+    justify-content: flex-start; /* Aligns all items to the left side of the container. */
+    justify-content: flex-end; /* Aligns all items to the right side of the container.*/
+    justify-content: center; /* Aligns all items to the horizontal centre of the container.*/
+    justify-content: space-between; /* Items are displayed with equal spacing between them starting from the far left to the far right of the container.*/
+    justify-content: space-around; /* Items are displayed with equal spacing around them starting from the far left to the far right of the container.*/
+}
+
+/* align-items aligns items on a vertical axis, your z axis.*/
+/* align-items should be applied to the parent element of the desired items.*/
+* {
+    align-items: flex-start; /* Aligns items to the top of the container. */
+    align-items: flex-end; /* Aligns items to the bottom of the container. */
+    align-items: center; /* Align items to the vertical centre of the container. */
+    align-items: baseline; /* Aligns items by the baseline, the line in which letters sit, of the container.*/
+    align-items: stretch; /* Items are stretched to fit the entire container. */
+}
+
+/* align-self aligns itself on a vertical axis, your z axis.*/
+/* align-self should be applied to the specific item, not the parent element. */
+* {
+    align-self: flex-start; /* Aligns self to the top of the container. */
+    align-self: flex-end; /* Aligns self to the bottom of the container. */
+    align-self: center; /* Align self to the vertical centre of the container. */
+    align-self: baseline; /* Aligns self by the baseline, the line in which letters sit, of the container.*/
+    align-self: stretch; /* The element is stretched to fit the entire container. */
+}
+
+/* flex-direction aligns items determines the direction items are aligned in. */
+/* flex-direction should be applied to the parent element of the desired items. */
+* {
+    flex-direction: row; 
+    /* Items are placed in the same direction as text, from left to right in the container. */
+    
+    flex-direction: row-reverse; 
+    /* Items are placed in the opposite direction as text, from right to left in the container. */
+    /* When direction is set to reverse end and start on other properties are also reversed. */
+
+    flex-direction: column; 
+    /* Items are placed top to bottom in the container. */
+    /* When flex-direction is set to column justify-content controls the vertical axes (z)
+    while align-items controls the horizontal axes (x). That is to say that their control
+    is inverted. */
+    
+    flex-direction: column-reverse; 
+    /* Items are placed bottom to top in the container. */
+    /* When direction is set to reverse end and start on other properties are also reversed. */
+}
+
+/* The order property can be applied to a singular item to set the order items are displayed in. */
+/* order should be applied to the specific item, not the parent element. */
+/* This is an alternative to reversing the column or row order. */
+/* The order most be an positive or negative integer. */
+.yellow {
+    order: 1;
+}
+.red {
+    order: 0;
+}
+.green {
+    order: -1;
+}
+
+/* flex-wrap is used to spread out or squeeze items into a row. */
+/* flex-direction should be applied to the parent element of the desired items. */
+* {
+    flex-wrap: nowrap; /* Items are fit into a singular line within the container. */
+    flex-wrap: wrap; /* Items will wrap around to additional lines of the container. */
+    flex-wrap: wrap-reverse; /* Items will wrap around to additional lines of the container in reverse order. */
+}
+
+/* flex-direction and flex-wrap are often used together so shorthand is available in the form of flex-flow. */
+/* Use flex-flow with the two properties separated by a space*/
+/* flex-flow should be applied to the parent element of the desired items. */
+* {
+    flex-flow: row wrap;
+    flex-flow: column-reverse wrap-reverse;
+    /* Etc... */
+}
+
+/* align-content sets how multiple lines are spaced apart from each other. */
+/* align-content should be applied to the parent element of the desired items. */
+/* align-content will only apply if there multiple lines in the container. */
+* {
+    align-content: flex-start; /* Lines are packed at the top of the container. */
+    align-content: flex-end; /* Lines are packed at the bottom of the container. */
+    align-content: center; /* Lines are packed at the vertical centre of the container. */
+    align-content: space-between; /* Lines are displayed with equal vertical spacing between them. */
+    align-content: space-around;  /* Lines are displayed with equal vertical spacing around them. */
+    align-content: stretch; /* Lines are stretched to fit the container. */
+}
