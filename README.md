@@ -1,5 +1,5 @@
 # FlexBox Notes
-**Note**: Most of what I learned comes from [FlexBox Froggy](https://flexboxfroggy.com/) which is a great, creative interactive learning resource. 
+**Note**: Most of what I learned comes from [FlexBox Froggy](https://flexboxfroggy.com/) which is a great, creative and interactive learning resource. 
 
 ***
 
